@@ -10,6 +10,7 @@ function getDigimon() {
     .catch(error => console.error('Error para listado de peliculas', error));
 }
 
+//LLenar lista con una tabla
 function fillDigimonList(data) {
   let contenido = `
     <thead>
