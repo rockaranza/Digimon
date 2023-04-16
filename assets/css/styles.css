@@ -1,0 +1,13 @@
+/* Para cambiar el color de fondo de la barra de navegación */
+.navbarCustom {
+  background-color: #007bff;
+}
+/* Para cambiar el color del botón de "Digimon aleatorio" */
+.btnCustom {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.digimonListImg {
+  width: 100px;
+}
