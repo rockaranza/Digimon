@@ -1,0 +1,46 @@
+body {
+  color: springgreen;
+  background-color: #193c62;
+}
+
+a {
+  color: springgreen;
+}
+
+a:hover {
+  color: #e5e2e2;
+}
+
+.box {
+  border: 1px solid springgreen;
+  padding: 50px 10px 20px 10px;
+}
+
+hr {
+  border-color: springgreen;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  background-color: #193c62;
+  border: 1px solid springgreen;
+  color: springgreen;
+}
+
+.button:hover {
+  background-color: springgreen;
+  border: 1px solid springgreen;
+  color: #193c62;
+}
+
+.icon {
+  color: springgreen;
+}
+
+.icon:hover {
+  color: #e5e2e2;
+}

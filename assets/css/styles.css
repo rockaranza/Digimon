@@ -1,13 +1,60 @@
-/* Para cambiar el color de fondo de la barra de navegación */
 .navbarCustom {
-  background-color: #007bff;
+  background-color: #000080;
 }
-/* Para cambiar el color del botón de "Digimon aleatorio" */
+
 .btnCustom {
-  background-color: #28a745;
-  border-color: #28a745;
+  background-color: #018EC9;
+  border-color: #018EC9;
+  color: #fff
+}
+
+.btnCustom:hover {
+  background-color: #02b1fc;
+  border-color: #02b1fc;
+  color: #fff
+}
+
+.btnSearch {
+  background-color: #fff;
+  border: 1px solid #018EC9;
+  color: #018EC9;
+}
+
+.btnSearch:hover {
+  background-color: #cacaca;
+  border: 1px solid #036c98;
+  color: #036c98;
+}
+
+.main {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url('http://imgfz.com/i/OlUmuKv.png');
+}
+
+.imgContainer{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.imgLogo {
+  width: 200px;
+}
+
+.tableScroll {
+  height: 60vh;
+  overflow-y: auto;
+  border-radius: 5px;
+  background-color: #fff;
 }
 
 .digimonListImg {
   width: 80px;
+}
+
+.footer {
+  background-color: #000080;
 }

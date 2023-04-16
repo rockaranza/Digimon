@@ -12,39 +12,42 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-
     <!-- Barra de Navegación -->
     <nav class="navbar navbar-expand-lg navbar-dark navbarCustom">
-        <a class="navbar-brand" href="#">DIGIMON</a>
+        <a class="navbar-brand" href="about.html">Sobre este proyecto</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <form class="form-inline my-2 my-lg-0">
-                        <input id="input-searchBar" class="form-control mr-sm-2" type="text" placeholder="Buscar">
-                        <button id="search-digimon-button" class="btn btn-light my-2 my-sm-0" type="submit">Buscar</button>
+                        <input id="input-searchBar" class="form-control mr-sm-2" type="text" placeholder="Nombre Digimon">
+                        <button id="search-digimon-button" class="btn my-2 my-sm-0 btnSearch" type="submit">Buscar</button>
                     </form>
                 </li>
-                <button id="random-digimon-button" class="btn btnCustom ml-2" data-toggle="modal" data-target="#digimonModal">Digimon aleatorio</button>
+                <button id="random-digimon-button" class="btn btnCustom ml-5" data-toggle="modal" data-target="#digimonModal">Digimon aleatorio</button>
             </ul>
            
         </div>
     </nav>
 
     <!-- Contenedor Principal -->
-    <div class="container-fluid mt-3">
+    <div class="container-fluid main">
 
         <!-- Fila Principal -->
         <div class="row">
-
             <!-- Columna de la Lista de Digimon -->
             <div class="col-lg-6 col-md-8 mb-3 mx-auto">
-                <h3>Lista de Digimon</h3>
-                <table class="table" id="digimonList">
-                    <!-- Se muestra tabla de Digimons inyectada en HTML por JS -->
-                </table>
+                <div class="imgContainer">
+                    <img class="imgLogo" src="http://imgfz.com/i/4pHwPNf.png" alt="Logo Digimon">
+                </div>
+                <!-- <h3>Lista de Digimon</h3> -->
+                <div class="tableScroll">
+                    <table class="table" id="digimonList">
+                        <!-- Se muestra tabla de Digimons inyectada en HTML por JS -->
+                    </table>
+                </div>
             </div>
 
         </div>
@@ -58,7 +61,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content" id="cardDigimon">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="digimonModalLabel">DIGIMON</h5>
+                    <h5 class="modal-title" id="digimonModalLabel">DATOS DIGIMON</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -72,11 +75,11 @@
             </div>
         </div>
     </div>
-    <footer class="bg-dark py-3">
+    <footer class="footer">
         <div class="container">
-          <div class="row">
+          <div class="row d-flex justify-content-center">
             <div class="col-md-6">
-              <p class="mb-0">Proyecto realizado para Bootcamp Frontend de Ecamp</p>
+              <p class="text-light text-center pt-2">Proyecto realizado para Bootcamp Frontend de Ecamp</p>
             </div>
           </div>
         </div>
