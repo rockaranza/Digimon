@@ -11,9 +11,25 @@ function getDigimon() {
 }
 
 function fillDigimonList(data) {
-  let contenido = '';
+  let contenido = `
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Nivel</th>
+        <th>Imagen</th>
+      </tr>
+    </thead>
+  `;
   data.forEach(digimon => {
-    contenido += `<li class="list-group-item">${digimon.name} <img class="digimonListImg" src="${digimon.img}"></li>`;
+    contenido += `
+      <tbody>
+        <tr>
+          <td><h6>${digimon.name}</h6></td>
+          <td><h6>${digimon.level}</h6></td>
+          <td><img src="${digimon.img}" class="digimonListImg"></td>
+        </tr>
+      </tbody>
+    `;
   })
   digimonList.innerHTML = contenido;
 }
@@ -41,9 +57,13 @@ randomDigimonButton.addEventListener('click', () => {
         const digimonRandom = getRandomDigimon(data);
         const card = document.getElementById("contentCard");
         card.innerHTML = `
-          <p>Nombre: ${digimonRandom.name}</p>
-          <img src="${digimonRandom.img}" alt="">
-          <p>Nivel: ${digimonRandom.level}</p>
+          <h2 class="text-center my-auto">${digimonRandom.name}</h2>
+          <div class="d-flex justify-content-center">
+            <img src="${digimonRandom.img}" alt="">
+          </div>
+          <div class="text-center my-auto">
+            <h4>${digimonRandom.level}</h4>
+          </div>
         `;
         console.log(digimonRandom);
       })
@@ -67,9 +87,13 @@ searchDigimonButton.addEventListener('click', function(event) {
       console.log(digimon.name)
       const card = document.getElementById("contentCard");
       card.innerHTML = `
-        <p>Nombre: ${digimon.name}</p>
-        <img src="${digimon.img}" alt="">
-        <p>Nivel: ${digimon.level}</p>
+        <h2 class="text-center my-auto">${digimon.name}</h2>
+        <div class="d-flex justify-content-center">
+          <img src="${digimon.img}" alt="">
+        </div>
+        <div class="text-center my-auto">
+          <h4>${digimon.level}</h4>
+        </div>
       `;
       console.log("digimonRandom");
     })
